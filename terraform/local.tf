@@ -1,5 +1,11 @@
 
 resource local_file name {
   filename = "output.txt"
-  content = "My Studies"    
+  content = var.my_content    
+}
+
+
+variable "my_content" {
+  type=string
+ # default = "Hello world"
 }
